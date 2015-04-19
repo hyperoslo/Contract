@@ -1,10 +1,5 @@
 # Contract
 
-[![CI Status](http://img.shields.io/travis/hyperoslo/Contract.svg?style=flat)](https://travis-ci.org/hyperoslo/Contract)
-[![Version](https://img.shields.io/cocoapods/v/Contract.svg?style=flat)](http://cocoadocs.org/docsets/Contract)
-[![License](https://img.shields.io/cocoapods/l/Contract.svg?style=flat)](http://cocoadocs.org/docsets/Contract)
-[![Platform](https://img.shields.io/cocoapods/p/Contract.svg?style=flat)](http://cocoadocs.org/docsets/Contract)
-
 ## Usage
 
 ```swift
