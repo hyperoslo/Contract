@@ -1,4 +1,4 @@
-# Contract
+![Contract](https://raw.githubusercontent.com/hyperoslo/Contract/master/Assets/cover.png)
 
 Apps that require signatures in a contract, behold!
 
