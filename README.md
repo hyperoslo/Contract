@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, HYPContractViewController
         firstPartyName: "CEO",
         secondPartyName: "Michael Minion",
         needsSignature: true)
+
       contractController.delegate = self
 
       if let window = self.window {
