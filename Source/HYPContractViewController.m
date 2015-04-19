@@ -39,7 +39,7 @@ HYPSignaturesViewControllerDelegate>
                      firstPartyName:(NSString *)firstPartyName
                     secondPartyName:(NSString *)secondPartyName
                      needsSignature:(BOOL)needsSignature {
-    self = [super init];
+    self = [super initWithNibName:nil bundle:nil];
     if (!self) return nil;
 
     self.title = NSLocalizedString(@"Contract", nil);
