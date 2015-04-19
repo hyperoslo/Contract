@@ -2,7 +2,7 @@
 
 Apps that require signatures in a contract, behold!
 
-No more crazyness, `Contract` has your back.
+No more crazyness, `Contract` makes signing your soul away much easier.
 
 ## Usage
 
