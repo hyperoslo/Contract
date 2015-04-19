@@ -10,14 +10,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, HYPContractViewController
     didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
       window = UIWindow(frame: UIScreen.mainScreen().bounds)
 
-      let contractController = HYPContractViewController(
-        contractURL: "http://ga.berkeley.edu/wp-content/uploads/2015/02/pdf-sample.pdf",
-        firstPartyName: "CEO",
-        secondPartyName: "Michael Minion",
-        needsSignature: true)
-      contractController.delegate = self
-
       if let window = self.window {
+        let contractController = HYPContractViewController(
+          contractURL: "http://ga.berkeley.edu/wp-content/uploads/2015/02/pdf-sample.pdf",
+          firstPartyName: "CEO",
+          secondPartyName: "Michael Minion",
+          needsSignature: true)
+        contractController.delegate = self
+
         window.rootViewController = UINavigationController(rootViewController: contractController)
         window.makeKeyAndVisible()
       }
