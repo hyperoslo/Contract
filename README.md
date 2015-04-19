@@ -45,6 +45,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, HYPContractViewController
 }
 ```
 
+## How it looks
+
+![Demo](https://raw.githubusercontent.com/hyperoslo/Contract/master/Assets/demo.png)
+
 ## Installation
 
 **Contract** is available through [CocoaPods](http://cocoapods.org). To install
