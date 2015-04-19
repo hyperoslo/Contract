@@ -1,5 +1,9 @@
 # Contract
 
+Apps that require signatures in a contract, behold!
+
+No more crazyness, `Contract` has your back.
+
 ## Usage
 
 ```swift
