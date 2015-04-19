@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		140442281AE380F200DDB154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140442271AE380F200DDB154 /* AppDelegate.swift */; };
-		1404422A1AE380F200DDB154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140442291AE380F200DDB154 /* ViewController.swift */; };
 		1404422F1AE380F200DDB154 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1404422E1AE380F200DDB154 /* Images.xcassets */; };
 		140442531AE381D100DDB154 /* HYPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442481AE381D100DDB154 /* HYPButton.m */; };
 		140442541AE381D100DDB154 /* HYPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442481AE381D100DDB154 /* HYPButton.m */; };
@@ -30,8 +29,7 @@
 /* Begin PBXFileReference section */
 		140442231AE380F200DDB154 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		140442261AE380F200DDB154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		140442271AE380F200DDB154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		140442291AE380F200DDB154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		140442271AE380F200DDB154 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
 		1404422E1AE380F200DDB154 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		140442471AE381D100DDB154 /* HYPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPButton.h; sourceTree = "<group>"; };
 		140442481AE381D100DDB154 /* HYPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPButton.m; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				140442271AE380F200DDB154 /* AppDelegate.swift */,
-				140442291AE380F200DDB154 /* ViewController.swift */,
 				1404422E1AE380F200DDB154 /* Images.xcassets */,
 				140442251AE380F200DDB154 /* Supporting Files */,
 				1404425F1AE381EE00DDB154 /* Pod-Bridging-Header.h */,
@@ -352,7 +349,6 @@
 				140442561AE381D100DDB154 /* HYPContractViewController.m in Sources */,
 				1404425E1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */,
 				140442541AE381D100DDB154 /* HYPButton.m in Sources */,
-				1404422A1AE380F200DDB154 /* ViewController.swift in Sources */,
 				140442581AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */,
 				140442281AE380F200DDB154 /* AppDelegate.swift in Sources */,
 				1404425A1AE381D100DDB154 /* HYPSignatureViewController.m in Sources */,
