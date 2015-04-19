@@ -1,0 +1,7 @@
+link_with 'Tests', 'Demo'
+
+pod 'HYPWebView'
+pod 'Signature'
+pod 'UIViewController-HYPContainer'
+pod 'Hex'
+pod 'UIButton-ANDYHighlighted'

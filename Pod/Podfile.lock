@@ -1,0 +1,25 @@
+PODS:
+  - Hex (1.1.1)
+  - HYPWebView (0.1.0):
+    - SVProgressHUD
+  - Signature (0.1.0)
+  - SVProgressHUD (1.1.3)
+  - UIButton-ANDYHighlighted (0.2.1)
+  - UIViewController-HYPContainer (0.2)
+
+DEPENDENCIES:
+  - Hex
+  - HYPWebView
+  - Signature
+  - UIButton-ANDYHighlighted
+  - UIViewController-HYPContainer
+
+SPEC CHECKSUMS:
+  Hex: acf6d0dc34658d3d44047a992bfd09190c87e6e7
+  HYPWebView: 83b76c6481eb4f768f117605bb84b0ecb0b0111a
+  Signature: e28a97a29066823dec37f13623015477a19bc60f
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  UIButton-ANDYHighlighted: 3f5e9fb68fb3425bd9fddc030af452d3ac9d1613
+  UIViewController-HYPContainer: 63d56dba6f2f334154304bd56892ba06ddb2005c
+
+COCOAPODS: 0.36.4

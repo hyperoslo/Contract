@@ -7,10 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140442281AE380F200DDB154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140442271AE380F200DDB154 /* AppDelegate.swift */; };
+		1404422A1AE380F200DDB154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140442291AE380F200DDB154 /* ViewController.swift */; };
+		1404422F1AE380F200DDB154 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1404422E1AE380F200DDB154 /* Images.xcassets */; };
+		140442531AE381D100DDB154 /* HYPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442481AE381D100DDB154 /* HYPButton.m */; };
+		140442541AE381D100DDB154 /* HYPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442481AE381D100DDB154 /* HYPButton.m */; };
+		140442551AE381D100DDB154 /* HYPContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424A1AE381D100DDB154 /* HYPContractViewController.m */; };
+		140442561AE381D100DDB154 /* HYPContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424A1AE381D100DDB154 /* HYPContractViewController.m */; };
+		140442571AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424C1AE381D100DDB154 /* HYPSignaturesViewController.m */; };
+		140442581AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424C1AE381D100DDB154 /* HYPSignaturesViewController.m */; };
+		140442591AE381D100DDB154 /* HYPSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424E1AE381D100DDB154 /* HYPSignatureViewController.m */; };
+		1404425A1AE381D100DDB154 /* HYPSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424E1AE381D100DDB154 /* HYPSignatureViewController.m */; };
+		1404425B1AE381D100DDB154 /* UIColor+HYPColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442501AE381D100DDB154 /* UIColor+HYPColors.m */; };
+		1404425C1AE381D100DDB154 /* UIColor+HYPColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442501AE381D100DDB154 /* UIColor+HYPColors.m */; };
+		1404425D1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442521AE381D100DDB154 /* UIFont+HYPStyles.m */; };
+		1404425E1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442521AE381D100DDB154 /* UIFont+HYPStyles.m */; };
 		146D72B31AB782920058798C /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146D72B21AB782920058798C /* Tests.m */; };
+		3F38CC73E16288496BC3BA04 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D144AD9458212465B413D6 /* libPods.a */; };
+		90F1E95A651BED5951167FFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D144AD9458212465B413D6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140442231AE380F200DDB154 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		140442261AE380F200DDB154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		140442271AE380F200DDB154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		140442291AE380F200DDB154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1404422E1AE380F200DDB154 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		140442471AE381D100DDB154 /* HYPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPButton.h; sourceTree = "<group>"; };
+		140442481AE381D100DDB154 /* HYPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPButton.m; sourceTree = "<group>"; };
+		140442491AE381D100DDB154 /* HYPContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPContractViewController.h; sourceTree = "<group>"; };
+		1404424A1AE381D100DDB154 /* HYPContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPContractViewController.m; sourceTree = "<group>"; };
+		1404424B1AE381D100DDB154 /* HYPSignaturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPSignaturesViewController.h; sourceTree = "<group>"; };
+		1404424C1AE381D100DDB154 /* HYPSignaturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPSignaturesViewController.m; sourceTree = "<group>"; };
+		1404424D1AE381D100DDB154 /* HYPSignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPSignatureViewController.h; sourceTree = "<group>"; };
+		1404424E1AE381D100DDB154 /* HYPSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPSignatureViewController.m; sourceTree = "<group>"; };
+		1404424F1AE381D100DDB154 /* UIColor+HYPColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HYPColors.h"; sourceTree = "<group>"; };
+		140442501AE381D100DDB154 /* UIColor+HYPColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HYPColors.m"; sourceTree = "<group>"; };
+		140442511AE381D100DDB154 /* UIFont+HYPStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+HYPStyles.h"; sourceTree = "<group>"; };
+		140442521AE381D100DDB154 /* UIFont+HYPStyles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+HYPStyles.m"; sourceTree = "<group>"; };
+		1404425F1AE381EE00DDB154 /* Pod-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pod-Bridging-Header.h"; sourceTree = "<group>"; };
 		146D72AC1AB782920058798C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146D72B11AB782920058798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		146D72B21AB782920058798C /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
@@ -18,27 +53,90 @@
 		14C136521AB784B200B7B07A /* CONTRIBUTING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../CONTRIBUTING.md; sourceTree = "<group>"; };
 		14C136541AB784B200B7B07A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		14C136551AB784B200B7B07A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		14C1365C1AB784BC00B7B07A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		80E49E48D416FCCDC5F94655 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B2D144AD9458212465B413D6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6E401A6A55AABEF0364681A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		140442201AE380F200DDB154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F1E95A651BED5951167FFA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		146D72A91AB782920058798C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F38CC73E16288496BC3BA04 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09D58B42DCFC63F6E6D00A4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80E49E48D416FCCDC5F94655 /* Pods.debug.xcconfig */,
+				C6E401A6A55AABEF0364681A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		140442241AE380F200DDB154 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				140442271AE380F200DDB154 /* AppDelegate.swift */,
+				140442291AE380F200DDB154 /* ViewController.swift */,
+				1404422E1AE380F200DDB154 /* Images.xcassets */,
+				140442251AE380F200DDB154 /* Supporting Files */,
+				1404425F1AE381EE00DDB154 /* Pod-Bridging-Header.h */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		140442251AE380F200DDB154 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				140442261AE380F200DDB154 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		140442461AE381D100DDB154 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				140442471AE381D100DDB154 /* HYPButton.h */,
+				140442481AE381D100DDB154 /* HYPButton.m */,
+				140442491AE381D100DDB154 /* HYPContractViewController.h */,
+				1404424A1AE381D100DDB154 /* HYPContractViewController.m */,
+				1404424B1AE381D100DDB154 /* HYPSignaturesViewController.h */,
+				1404424C1AE381D100DDB154 /* HYPSignaturesViewController.m */,
+				1404424D1AE381D100DDB154 /* HYPSignatureViewController.h */,
+				1404424E1AE381D100DDB154 /* HYPSignatureViewController.m */,
+				1404424F1AE381D100DDB154 /* UIColor+HYPColors.h */,
+				140442501AE381D100DDB154 /* UIColor+HYPColors.m */,
+				140442511AE381D100DDB154 /* UIFont+HYPStyles.h */,
+				140442521AE381D100DDB154 /* UIFont+HYPStyles.m */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
 		146D728A1AB782920058798C = {
 			isa = PBXGroup;
 			children = (
-				14C1365B1AB784BC00B7B07A /* Source */,
+				140442461AE381D100DDB154 /* Source */,
 				14C136501AB7849300B7B07A /* Metadata */,
 				146D72AF1AB782920058798C /* Tests */,
+				140442241AE380F200DDB154 /* Demo */,
 				146D72941AB782920058798C /* Products */,
+				CE2D9DC45F5190C64EFB6C97 /* Frameworks */,
+				09D58B42DCFC63F6E6D00A4E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				146D72AC1AB782920058798C /* Tests.xctest */,
+				140442231AE380F200DDB154 /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,25 +177,45 @@
 			name = Metadata;
 			sourceTree = "<group>";
 		};
-		14C1365B1AB784BC00B7B07A /* Source */ = {
+		CE2D9DC45F5190C64EFB6C97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				14C1365C1AB784BC00B7B07A /* .gitkeep */,
+				B2D144AD9458212465B413D6 /* libPods.a */,
 			);
-			name = Source;
-			path = ../Source;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		140442221AE380F200DDB154 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 140442431AE380F200DDB154 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				76B0D973A366AF9108D5B670 /* Check Pods Manifest.lock */,
+				1404421F1AE380F200DDB154 /* Sources */,
+				140442201AE380F200DDB154 /* Frameworks */,
+				140442211AE380F200DDB154 /* Resources */,
+				50BD9BD60CC5077752B6506C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 140442231AE380F200DDB154 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		146D72AB1AB782920058798C /* Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 146D72B91AB782920058798C /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
+				5D9952493E4CC399C97638E7 /* Check Pods Manifest.lock */,
 				146D72A81AB782920058798C /* Sources */,
 				146D72A91AB782920058798C /* Frameworks */,
 				146D72AA1AB782920058798C /* Resources */,
+				B5D43FFB96B3223B5DD1D331 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -116,6 +235,9 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = Example;
 				TargetAttributes = {
+					140442221AE380F200DDB154 = {
+						CreatedOnToolsVersion = 6.3;
+					};
 					146D72AB1AB782920058798C = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -135,11 +257,20 @@
 			projectRoot = "";
 			targets = (
 				146D72AB1AB782920058798C /* Tests */,
+				140442221AE380F200DDB154 /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		140442211AE380F200DDB154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1404422F1AE380F200DDB154 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		146D72AA1AB782920058798C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,18 +280,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50BD9BD60CC5077752B6506C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D9952493E4CC399C97638E7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76B0D973A366AF9108D5B670 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D43FFB96B3223B5DD1D331 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1404421F1AE380F200DDB154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1404425C1AE381D100DDB154 /* UIColor+HYPColors.m in Sources */,
+				140442561AE381D100DDB154 /* HYPContractViewController.m in Sources */,
+				1404425E1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */,
+				140442541AE381D100DDB154 /* HYPButton.m in Sources */,
+				1404422A1AE380F200DDB154 /* ViewController.swift in Sources */,
+				140442581AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */,
+				140442281AE380F200DDB154 /* AppDelegate.swift in Sources */,
+				1404425A1AE381D100DDB154 /* HYPSignatureViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		146D72A81AB782920058798C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				146D72B31AB782920058798C /* Tests.m in Sources */,
+				1404425B1AE381D100DDB154 /* UIColor+HYPColors.m in Sources */,
+				140442571AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */,
+				140442551AE381D100DDB154 /* HYPContractViewController.m in Sources */,
+				1404425D1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */,
+				140442591AE381D100DDB154 /* HYPSignatureViewController.m in Sources */,
+				140442531AE381D100DDB154 /* HYPButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1404423F1AE380F200DDB154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E49E48D416FCCDC5F94655 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo/Pod-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		140442401AE380F200DDB154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E401A6A55AABEF0364681A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo/Pod-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 		146D72B41AB782920058798C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -239,6 +493,7 @@
 		};
 		146D72BA1AB782920058798C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E49E48D416FCCDC5F94655 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -256,6 +511,7 @@
 		};
 		146D72BB1AB782920058798C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E401A6A55AABEF0364681A /* Pods.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -270,6 +526,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		140442431AE380F200DDB154 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1404423F1AE380F200DDB154 /* Debug */,
+				140442401AE380F200DDB154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		146D728E1AB782920058798C /* Build configuration list for PBXProject "Pod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
