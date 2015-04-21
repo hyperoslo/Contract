@@ -15,6 +15,8 @@ static const CGSize HYPContractPopoverSize = { .width = 320.0f, .height = 360.0f
                    secondPartyName:(NSString *)secondPartyName
                     needsSignature:(BOOL)needsSignature;
 
+- (void)presentSignatureControl;
+
 @end
 
 @protocol HYPContractViewControllerDelegate <NSObject>

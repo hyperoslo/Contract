@@ -12,11 +12,8 @@
 #import "UIViewController+HYPContainer.h"
 
 static CGFloat const HYPControlViewHeight = 210.0f;
-static const CGRect HYPContractSignatureButtonRect = {0.0f, 0.0f, 250.0f, 35.0f};
-static const CGRect HYPContractEmailButtonRect = {0.0f, 0.0f, 200.0f, 35.0f};
 
-@interface HYPContractViewController () <UIScrollViewDelegate, HYPWebViewDelegate,
-HYPSignaturesViewControllerDelegate>
+@interface HYPContractViewController () <UIScrollViewDelegate, HYPSignaturesViewControllerDelegate>
 
 @property (nonatomic) BOOL controlViewPresented;
 @property (nonatomic) HYPWebView *webView;
@@ -27,8 +24,6 @@ HYPSignaturesViewControllerDelegate>
 @property (nonatomic, copy) NSURLRequest *URLRequest;
 @property (nonatomic, copy) NSString *firstPartyName;
 @property (nonatomic, copy) NSString *secondPartyName;
-@property (nonatomic) HYPButton *signatureComposerButton;
-@property (nonatomic) HYPButton *sendButton;
 @property (nonatomic) BOOL needsSignature;
 
 @end
@@ -59,7 +54,6 @@ HYPSignaturesViewControllerDelegate>
     if (_webView) return _webView;
 
     _webView = [[HYPWebView alloc] initWithFrame:self.view.frame];
-    _webView.webViewDelegate = self;
     _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
     return _webView;
@@ -76,60 +70,12 @@ HYPSignaturesViewControllerDelegate>
     return _controlsViewController;
 }
 
-- (UIBarButtonItem *)leftButton {
-    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Dismiss", nil)
-                                                               style:UIBarButtonItemStyleDone
-                                                              target:self
-                                                              action:@selector(cancelButtonAction)];
-
-    return button;
-}
-
-- (UIBarButtonItem *)rightButton {
-    UIBarButtonItem *doneButton;
-
-    doneButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Save", nil)
-                                                  style:UIBarButtonItemStyleDone
-                                                 target:self
-                                                 action:@selector(doneButtonAction)];
-    doneButton.enabled = NO;
-
-    return doneButton;
-}
-
-- (HYPButton *)signatureComposerButton {
-    if (_signatureComposerButton) return _signatureComposerButton;
-
-    _signatureComposerButton = [HYPButton stickyButtonWithFrame:HYPContractSignatureButtonRect
-                                                           title:NSLocalizedString(@"ContractSignatureComposerShow", nil)
-                                                          target:self
-                                                          action:@selector(presentSignatureControl)];
-
-    return _signatureComposerButton;
-}
-
-- (HYPButton *)sendButton {
-    if (_sendButton) return _sendButton;
-
-    _sendButton = [HYPButton stickyButtonWithFrame:HYPContractEmailButtonRect
-                                              title:NSLocalizedString(@"SendToEmail", nil)
-                                             target:self
-                                             action:@selector(sendButtonAction)];
-
-    return _sendButton;
-}
-
 #pragma mark - View Life cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-
-    [self styleNavigationBar];
-
-    self.navigationItem.leftBarButtonItem = [self leftButton];
-    self.navigationItem.rightBarButtonItem = [self rightButton];
 
     [self.view addSubview:self.webView];
 
@@ -156,42 +102,10 @@ HYPSignaturesViewControllerDelegate>
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
-#pragma mark - Private Methods
-
-- (void)showToolbar {
-    NSMutableArray *items = [NSMutableArray new];
-
-    [items addObject:[[UIBarButtonItem alloc] initWithCustomView:self.sendButton]];
-
-    [items addObject:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
-                                                                   target:self
-                                                                   action:nil]];
-
-    if (self.needsSignature) {
-        [items addObject:[[UIBarButtonItem alloc] initWithCustomView:[self signatureComposerButton]]];
-    }
-
-    [self.navigationController setToolbarHidden:NO animated:YES];
-    [self.navigationController.toolbar setItems:items];
-}
-
-- (void)styleNavigationBar {
-    self.navigationController.navigationBar.barTintColor = [UIColor HYPLightGray];
-    self.navigationController.navigationBar.tintColor = [UIColor HYPCoreBlue];
-    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
-
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor HYPCoreBlue],
-                                                                    NSFontAttributeName            : [UIFont HYPMediumSizeBold]};
-}
-
 #pragma mark - Control Methods
 
 - (void)presentSignatureControl {
     self.controlViewPresented = !self.controlViewPresented;
-
-    NSString *title = (self.controlViewPresented) ? NSLocalizedString(@"ContractSignatureComposerHide", nil) : NSLocalizedString(@"ContractSignatureComposerShow", nil);
-    [self.signatureComposerButton setTitle:title
-                                  forState:UIControlStateNormal];
 
     [self animateControlView:self.controlsViewController.view
                         show:self.controlViewPresented];
@@ -225,72 +139,9 @@ HYPSignaturesViewControllerDelegate>
 - (void)signaturesViewController:(HYPSignaturesViewController *)signaturesViewController
 didFinishWithFirstPartySignature:(UIImage *)firstPartySignature
             secondPartySignature:(UIImage *)secondPartySignature {
-    BOOL shouldHideSendButton = (!firstPartySignature || !secondPartySignature);
-    self.sendButton.hidden = shouldHideSendButton;
-
-    BOOL hasBothSignatures = (firstPartySignature && secondPartySignature);
-    self.navigationItem.rightBarButtonItem.enabled = hasBothSignatures;
 
     self.secondPartySignature = firstPartySignature;
     self.firstPartySignature = secondPartySignature;
-}
-
-#pragma mark - Actions
-
-- (void)cancelButtonAction {
-    [SVProgressHUD dismiss];
-    [self.delegate contractControllerDidDismiss:self];
-}
-
-- (void)doneButtonAction {
-    [self.delegate contractControllerDidFinish:self
-                       withFirstPartySignature:self.firstPartySignature
-                       andSecondPartySignature:self.secondPartySignature];
-}
-
-- (void)sendButtonAction {
-    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
-
-//    NSURL *contractURL = [NSURL URLWithString:self.contract.url];
-//    [self.networking downloadContract:contractURL completion:^(NSData *pdfData, NSError *error) {
-//        [SVProgressHUD dismiss];
-//
-//        if (error || !pdfData) {
-//
-//            [PSTAlertController presentDismissableAlertWithTitle:NSLocalizedString(@"ErrorSENDContract", nil)
-//                                                         message:nil
-//                                                      controller:self];
-//            return;
-//        }
-//
-//        [self.emailManager applySystemStyle];
-//
-//        HYPEmailAttachment *attachment = [HYPEmailAttachment new];
-//        attachment.data = pdfData;
-//        attachment.mimeType = @"application/pdf";
-//        attachment.fileName = @"HYP-kontrakt.pdf";
-//
-//        [self.emailManager sendMailTo:self.contract.employee.emailAddress
-//                              subject:NSLocalizedString(@"SENDContractSubject", nil)
-//                                 body:NSLocalizedString(@"SENDContractBody", nil)
-//                           attachment:attachment
-//                      usingController:self];
-//    }];
-}
-
-#pragma mark - HYPEmailManagerDelegate
-
-//- (void)emailManagerDidFinished:(HYPEmailManager *)emailManager {
-//    [appDelegate applyStyle];
-//}
-
-#pragma mark - HYPWebViewDelegate
-
-- (void)webViewDidFinishLoading:(HYPWebView *)webView error:(NSError *)error {
-    if (!error) {
-        [self showToolbar];
-        self.navigationItem.rightBarButtonItem = [self rightButton];
-    }
 }
 
 @end
