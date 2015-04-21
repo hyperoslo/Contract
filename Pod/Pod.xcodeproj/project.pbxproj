@@ -21,6 +21,7 @@
 		1404425C1AE381D100DDB154 /* UIColor+HYPColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442501AE381D100DDB154 /* UIColor+HYPColors.m */; };
 		1404425D1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442521AE381D100DDB154 /* UIFont+HYPStyles.m */; };
 		1404425E1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442521AE381D100DDB154 /* UIFont+HYPStyles.m */; };
+		142B5EEA1AE6906200681B50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B5EE91AE6906200681B50 /* ViewController.swift */; };
 		146D72B31AB782920058798C /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146D72B21AB782920058798C /* Tests.m */; };
 		3F38CC73E16288496BC3BA04 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D144AD9458212465B413D6 /* libPods.a */; };
 		90F1E95A651BED5951167FFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D144AD9458212465B413D6 /* libPods.a */; };
@@ -44,6 +45,7 @@
 		140442511AE381D100DDB154 /* UIFont+HYPStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+HYPStyles.h"; sourceTree = "<group>"; };
 		140442521AE381D100DDB154 /* UIFont+HYPStyles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+HYPStyles.m"; sourceTree = "<group>"; };
 		1404425F1AE381EE00DDB154 /* Pod-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pod-Bridging-Header.h"; sourceTree = "<group>"; };
+		142B5EE91AE6906200681B50 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		146D72AC1AB782920058798C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146D72B11AB782920058798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		146D72B21AB782920058798C /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				1404422E1AE380F200DDB154 /* Images.xcassets */,
 				140442251AE380F200DDB154 /* Supporting Files */,
 				1404425F1AE381EE00DDB154 /* Pod-Bridging-Header.h */,
+				142B5EE91AE6906200681B50 /* ViewController.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				140442541AE381D100DDB154 /* HYPButton.m in Sources */,
 				140442581AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */,
 				140442281AE380F200DDB154 /* AppDelegate.swift in Sources */,
+				142B5EEA1AE6906200681B50 /* ViewController.swift in Sources */,
 				1404425A1AE381D100DDB154 /* HYPSignatureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

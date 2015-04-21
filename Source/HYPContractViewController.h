@@ -21,10 +21,8 @@ static const CGSize HYPContractPopoverSize = { .width = 320.0f, .height = 360.0f
 
 @protocol HYPContractViewControllerDelegate <NSObject>
 
-- (void)contractControllerDidFinish:(HYPContractViewController *)contractController
-            withFirstPartySignature:(UIImage *)firstPartySignature
-            andSecondPartySignature:(UIImage *)secondPartySignature;
-
-- (void)contractControllerDidDismiss:(HYPContractViewController *)contractController;
+- (void)contractControllerDidSign:(HYPContractViewController *)contractController
+              firstPartySignature:(UIImage *)firstPartySignature
+          andSecondPartySignature:(UIImage *)secondPartySignature;
 
 @end

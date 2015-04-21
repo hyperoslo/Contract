@@ -1,7 +1,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, HYPContractViewControllerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
@@ -14,28 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, HYPContractViewController
         let requestURL = NSURL(string: "http://ga.berkeley.edu/wp-content/uploads/2015/02/pdf-sample.pdf")
         let request = NSURLRequest(URL: requestURL!)
 
-        let contractController = HYPContractViewController(
+        let contractController = ViewController(
           URLRequest: request,
           firstPartyName: "CEO",
           secondPartyName: "Michael Minion",
           needsSignature: true)
-        contractController.delegate = self
 
-        window.rootViewController = UINavigationController(rootViewController: contractController)
+        let navigationController = UINavigationController(rootViewController: contractController)
+        navigationController.toolbarHidden = false
+
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
       }
 
       return true
-  }
-
-  func contractControllerDidFinish(
-    contractController: HYPContractViewController!,
-    withFirstPartySignature firstPartySignature: UIImage!,
-    andSecondPartySignature secondPartySignature: UIImage!) {
-      println("finished")
-  }
-
-  func contractControllerDidDismiss(contractController: HYPContractViewController!) {
-    println("dismiss")
   }
 }

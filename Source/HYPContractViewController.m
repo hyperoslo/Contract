@@ -140,8 +140,14 @@ static CGFloat const HYPControlViewHeight = 210.0f;
 didFinishWithFirstPartySignature:(UIImage *)firstPartySignature
             secondPartySignature:(UIImage *)secondPartySignature {
 
-    self.secondPartySignature = firstPartySignature;
     self.firstPartySignature = secondPartySignature;
+    self.secondPartySignature = firstPartySignature;
+
+    if ([self.delegate respondsToSelector:@selector(contractControllerDidSign:firstPartySignature:andSecondPartySignature:)]) {
+        [self.delegate contractControllerDidSign:self
+                             firstPartySignature:self.firstPartySignature
+                         andSecondPartySignature:self.secondPartySignature];
+    }
 }
 
 @end
