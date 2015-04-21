@@ -24,7 +24,7 @@ HYPSignaturesViewControllerDelegate>
 @property (nonatomic) CGRect previousRect;
 @property (nonatomic) UIImage *firstPartySignature;
 @property (nonatomic) UIImage *secondPartySignature;
-@property (nonatomic, copy) NSString *contractURL;
+@property (nonatomic, copy) NSURLRequest *URLRequest;
 @property (nonatomic, copy) NSString *firstPartyName;
 @property (nonatomic, copy) NSString *secondPartyName;
 @property (nonatomic) HYPButton *signatureComposerButton;
@@ -35,17 +35,17 @@ HYPSignaturesViewControllerDelegate>
 
 @implementation HYPContractViewController
 
-- (instancetype)initWithContractURL:(NSString *)contractURL
-                     firstPartyName:(NSString *)firstPartyName
-                    secondPartyName:(NSString *)secondPartyName
-                     needsSignature:(BOOL)needsSignature {
+- (instancetype)initWithURLRequest:(NSURLRequest *)URLRequest
+                    firstPartyName:(NSString *)firstPartyName
+                   secondPartyName:(NSString *)secondPartyName
+                    needsSignature:(BOOL)needsSignature {
     self = [super initWithNibName:nil bundle:nil];
     if (!self) return nil;
 
     self.title = NSLocalizedString(@"Contract", nil);
     self.edgesForExtendedLayout = UIRectEdgeNone;
 
-    _contractURL = contractURL;
+    _URLRequest = URLRequest;
     _firstPartyName = firstPartyName;
     _secondPartyName = secondPartyName;
     _needsSignature = needsSignature;
@@ -144,7 +144,7 @@ HYPSignaturesViewControllerDelegate>
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 
-    [self loadRequestForContractURL:self.contractURL];
+    [self.webView loadRequest:self.URLRequest];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -182,13 +182,6 @@ HYPSignaturesViewControllerDelegate>
 
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor HYPCoreBlue],
                                                                     NSFontAttributeName            : [UIFont HYPMediumSizeBold]};
-}
-
-- (void)loadRequestForContractURL:(NSString *)contractURL {
-    NSURL *requestURL = [NSURL URLWithString:contractURL];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestURL];
-//    [request setValue:[HYPTokenManager token] forHTTPHeaderField:HYPHeaderTokenKey];
-    [self.webView loadRequest:request];
 }
 
 #pragma mark - Control Methods

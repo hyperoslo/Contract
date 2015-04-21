@@ -10,10 +10,10 @@ static const CGSize HYPContractPopoverSize = { .width = 320.0f, .height = 360.0f
 
 @property (nonatomic, weak) id <HYPContractViewControllerDelegate> delegate;
 
-- (instancetype)initWithContractURL:(NSString *)contractURL
-                     firstPartyName:(NSString *)firstPartyName
-                    secondPartyName:(NSString *)secondPartyName
-                     needsSignature:(BOOL)needsSignature;
+- (instancetype)initWithURLRequest:(NSURLRequest *)URLRequest
+                    firstPartyName:(NSString *)firstPartyName
+                   secondPartyName:(NSString *)secondPartyName
+                    needsSignature:(BOOL)needsSignature;
 
 @end
 

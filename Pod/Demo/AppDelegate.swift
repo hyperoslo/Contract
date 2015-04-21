@@ -11,8 +11,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, HYPContractViewController
       window = UIWindow(frame: UIScreen.mainScreen().bounds)
 
       if let window = self.window {
+        let requestURL = NSURL(string: "http://ga.berkeley.edu/wp-content/uploads/2015/02/pdf-sample.pdf")
+        let request = NSURLRequest(URL: requestURL!)
+
         let contractController = HYPContractViewController(
-          contractURL: "http://ga.berkeley.edu/wp-content/uploads/2015/02/pdf-sample.pdf",
+          URLRequest: request,
           firstPartyName: "CEO",
           secondPartyName: "Michael Minion",
           needsSignature: true)
