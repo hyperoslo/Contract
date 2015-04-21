@@ -1,4 +1,4 @@
-![Contract](https://raw.githubusercontent.com/hyperoslo/Contract/master/Assets/cover-v2.png)
+![Contract](https://raw.githubusercontent.com/hyperoslo/Contract/master/Images/cover-v2.png)
 
 Apps that require signatures in a contract, behold!
 
@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, HYPContractViewController
 
 ## How it looks
 
-![Demo](https://raw.githubusercontent.com/hyperoslo/Contract/master/Assets/demo.png)
+![Demo](https://raw.githubusercontent.com/hyperoslo/Contract/master/Images/demo.png)
 
 ## Installation
 
