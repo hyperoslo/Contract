@@ -62,7 +62,7 @@ static const CGFloat HYPSignatureSubjectY = 70.0f;
     _doneButton.contentEdgeInsets = UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 33.0f);
     _doneButton.imageEdgeInsets = UIEdgeInsetsMake(-3.0f, 0.0f, 0.0f, 5.f);
     _doneButton.titleEdgeInsets = UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f);
-    [_doneButton setImage:[UIImage imageNamed:@"ic_mini_check"] forState:UIControlStateNormal];
+    [_doneButton setImage:[UIImage imageNamed:@"Contract.bundle/check"] forState:UIControlStateNormal];
     _doneButton.alpha = 0.0f;
 
     return _doneButton;
@@ -80,7 +80,7 @@ static const CGFloat HYPSignatureSubjectY = 70.0f;
     _cancelButton.contentEdgeInsets = UIEdgeInsetsMake(0.0f, 33.0f, 0.0f, 0.0f);
     _cancelButton.imageEdgeInsets = UIEdgeInsetsMake(-3.0f, -5.0f, 0.0f, 0.f);
     _cancelButton.titleEdgeInsets = UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f);
-    [_cancelButton setImage:[UIImage imageNamed:@"ic_mini_clear"] forState:UIControlStateNormal];
+    [_cancelButton setImage:[UIImage imageNamed:@"Contract.bundle/clear"] forState:UIControlStateNormal];
     _cancelButton.alpha = 0.0f;
 
     return _cancelButton;
@@ -151,8 +151,8 @@ static const CGFloat HYPSignatureSubjectY = 70.0f;
     [self.cancelButton setTitleColor:color forState:UIControlStateNormal];
     [self.doneButton setTitleColor:color forState:UIControlStateNormal];
 
-    UIImage *checkImage = (enabled) ? [UIImage imageNamed:@"ic_mini_check"] : [UIImage imageNamed:@"ic_mini_check_disabled"];
-    UIImage *clearImage = (enabled) ? [UIImage imageNamed:@"ic_mini_clear"] : [UIImage imageNamed:@"ic_mini_clear_disabled"];
+    UIImage *checkImage = (enabled) ? [UIImage imageNamed:@"Contract.bundle/check"] : [UIImage imageNamed:@"Contract.bundle/check_disabled"];
+    UIImage *clearImage = (enabled) ? [UIImage imageNamed:@"Contract.bundle/clear"] : [UIImage imageNamed:@"Contract.bundle/clear_disabled"];
     [self.cancelButton setImage:clearImage forState:UIControlStateNormal];
     [self.doneButton setImage:checkImage forState:UIControlStateNormal];
 }
