@@ -11,16 +11,7 @@ class ViewController: HYPContractViewController, HYPContractViewControllerDelega
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
-        let signButton = UIBarButtonItem(
-            title: "Sign",
-            style: .Done,
-            target: self,
-            action: "sign")
-        self.toolbarItems = [signButton]
-    }
-
-    func sign(){
-        self.presentSignatureControl()
+        updateButton(false)
     }
 
     func contractControllerDidSign(
@@ -28,5 +19,21 @@ class ViewController: HYPContractViewController, HYPContractViewControllerDelega
         firstPartySignature: UIImage!,
         andSecondPartySignature secondPartySignature: UIImage!) {
             println("finished")
+    }
+
+    func contractController(
+        contractController: HYPContractViewController!,
+        didToogleSignatureControl shown: Bool) {
+            updateButton(shown)
+    }
+
+    func updateButton(wasSigned: Bool) {
+        let title = (wasSigned) ? "Hide control" : "Show control"
+        let signButton = UIBarButtonItem(
+            title: title,
+            style: .Done,
+            target: self,
+            action: "toogleSignatureControl")
+        toolbarItems = [signButton]
     }
 }

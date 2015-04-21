@@ -104,14 +104,22 @@ static CGFloat const HYPControlViewHeight = 210.0f;
 
 #pragma mark - Control Methods
 
-- (void)presentSignatureControl {
+- (void)toogleSignatureControl {
     self.controlViewPresented = !self.controlViewPresented;
 
     [self animateControlView:self.controlsViewController.view
-                        show:self.controlViewPresented];
+                        show:self.controlViewPresented
+                  completion:^{
+                      if ([self.delegate respondsToSelector:@selector(contractController:didToogleSignatureControl:)]) {
+                          [self.delegate contractController:self
+                                  didToogleSignatureControl:self.controlViewPresented];
+                      }
+                  }];
 }
 
-- (void)animateControlView:(UIView *)view show:(BOOL)show {
+- (void)animateControlView:(UIView *)view
+                      show:(BOOL)show
+                completion:(void (^)())completion {
     CGRect webViewFrame = self.webView.frame;
     CGRect controlViewFrame = view.frame;
 
@@ -131,7 +139,11 @@ static CGFloat const HYPControlViewHeight = 210.0f;
                      animations:^{
                          [self.webView setFrame:webViewFrame];
                          [view setFrame:controlViewFrame];
-                     } completion:nil];
+                     } completion:^(BOOL finished) {
+                         if (completion) {
+                             completion();
+                         }
+                     }];
 }
 
 #pragma mark - HYPSignaturesViewControllerDelegate

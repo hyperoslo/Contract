@@ -15,7 +15,7 @@ static const CGSize HYPContractPopoverSize = { .width = 320.0f, .height = 360.0f
                    secondPartyName:(NSString *)secondPartyName
                     needsSignature:(BOOL)needsSignature;
 
-- (void)presentSignatureControl;
+- (void)toogleSignatureControl;
 
 @end
 
@@ -24,5 +24,9 @@ static const CGSize HYPContractPopoverSize = { .width = 320.0f, .height = 360.0f
 - (void)contractControllerDidSign:(HYPContractViewController *)contractController
               firstPartySignature:(UIImage *)firstPartySignature
           andSecondPartySignature:(UIImage *)secondPartySignature;
+
+@optional
+- (void)contractController:(HYPContractViewController *)contractController
+ didToogleSignatureControl:(BOOL)shown;
 
 @end
