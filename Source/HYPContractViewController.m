@@ -5,8 +5,6 @@
 #import "HYPSignaturesViewController.h"
 #import "HYPWebView.h"
 #import "SVProgressHUD.h"
-#import "UIColor+HYPColors.h"
-#import "UIFont+HYPStyles.h"
 
 #import "UIViewController+HYPContainer.h"
 

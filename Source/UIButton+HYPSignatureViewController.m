@@ -1,8 +1,6 @@
 #import "UIButton+HYPSignatureViewController.h"
 
 #import "UIColor+Hex.h"
-#import "UIColor+HYPColors.h"
-#import "UIFont+HYPStyles.h"
 #import "UIButton+ANDYHighlighted.h"
 
 @implementation UIButton (HYPSignatureViewController)
@@ -18,20 +16,20 @@
     button.contentEdgeInsets = UIEdgeInsetsMake(0.0f, 24.0f, 0.0f, 33.0f);
     button.imageEdgeInsets = UIEdgeInsetsMake(-2.0f, -7.0f, 0.0f, 33.0f);
     button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    button.titleLabel.font = [UIFont HYPMediumSizeBold];
+    button.titleLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:17.0];
 
     button.highlightedBackgroundColor = [UIColor clearColor];
-    button.layer.borderColor = [UIColor HYPCallToAction].CGColor;
+    button.layer.borderColor = [UIColor colorFromHex:@"3DAFEB"].CGColor;
 
-    [button setTitleColor:[UIColor HYPDarkBlue] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor HYPCoreBlue] forState:UIControlStateHighlighted];
+    [button setTitleColor:[UIColor colorFromHex:@"455C73"] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor colorFromHex:@"28649C"] forState:UIControlStateHighlighted];
     [button setTitle:title forState:UIControlStateNormal];
 
     if (target && action) {
-        button.titleColor = [UIColor HYPCallToAction];
-        button.highlightedTitleColor = [UIColor HYPCoreBlue];
+        button.titleColor = [UIColor colorFromHex:@"3DAFEB"];
+        button.highlightedTitleColor = [UIColor colorFromHex:@"28649C"];
         [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
-        [button setTitleColor:[UIColor HYPCallToAction] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor colorFromHex:@"3DAFEB"] forState:UIControlStateNormal];
     } else {
         button.userInteractionEnabled = NO;
     }

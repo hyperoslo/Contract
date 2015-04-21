@@ -15,10 +15,6 @@
 		140442581AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424C1AE381D100DDB154 /* HYPSignaturesViewController.m */; };
 		140442591AE381D100DDB154 /* HYPSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424E1AE381D100DDB154 /* HYPSignatureViewController.m */; };
 		1404425A1AE381D100DDB154 /* HYPSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424E1AE381D100DDB154 /* HYPSignatureViewController.m */; };
-		1404425B1AE381D100DDB154 /* UIColor+HYPColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442501AE381D100DDB154 /* UIColor+HYPColors.m */; };
-		1404425C1AE381D100DDB154 /* UIColor+HYPColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442501AE381D100DDB154 /* UIColor+HYPColors.m */; };
-		1404425D1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442521AE381D100DDB154 /* UIFont+HYPStyles.m */; };
-		1404425E1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442521AE381D100DDB154 /* UIFont+HYPStyles.m */; };
 		142B5EEA1AE6906200681B50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B5EE91AE6906200681B50 /* ViewController.swift */; };
 		142B5EED1AE697BC00681B50 /* UIButton+HYPSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142B5EEC1AE697BC00681B50 /* UIButton+HYPSignatureViewController.m */; };
 		146D72B31AB782920058798C /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146D72B21AB782920058798C /* Tests.m */; };
@@ -37,10 +33,6 @@
 		1404424C1AE381D100DDB154 /* HYPSignaturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPSignaturesViewController.m; sourceTree = "<group>"; };
 		1404424D1AE381D100DDB154 /* HYPSignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPSignatureViewController.h; sourceTree = "<group>"; };
 		1404424E1AE381D100DDB154 /* HYPSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPSignatureViewController.m; sourceTree = "<group>"; };
-		1404424F1AE381D100DDB154 /* UIColor+HYPColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HYPColors.h"; sourceTree = "<group>"; };
-		140442501AE381D100DDB154 /* UIColor+HYPColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HYPColors.m"; sourceTree = "<group>"; };
-		140442511AE381D100DDB154 /* UIFont+HYPStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+HYPStyles.h"; sourceTree = "<group>"; };
-		140442521AE381D100DDB154 /* UIFont+HYPStyles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+HYPStyles.m"; sourceTree = "<group>"; };
 		1404425F1AE381EE00DDB154 /* Pod-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pod-Bridging-Header.h"; sourceTree = "<group>"; };
 		142B5EE91AE6906200681B50 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		142B5EEB1AE697BC00681B50 /* UIButton+HYPSignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HYPSignatureViewController.h"; sourceTree = "<group>"; };
@@ -115,10 +107,6 @@
 				1404424C1AE381D100DDB154 /* HYPSignaturesViewController.m */,
 				1404424D1AE381D100DDB154 /* HYPSignatureViewController.h */,
 				1404424E1AE381D100DDB154 /* HYPSignatureViewController.m */,
-				1404424F1AE381D100DDB154 /* UIColor+HYPColors.h */,
-				140442501AE381D100DDB154 /* UIColor+HYPColors.m */,
-				140442511AE381D100DDB154 /* UIFont+HYPStyles.h */,
-				140442521AE381D100DDB154 /* UIFont+HYPStyles.m */,
 				142B5EEB1AE697BC00681B50 /* UIButton+HYPSignatureViewController.h */,
 				142B5EEC1AE697BC00681B50 /* UIButton+HYPSignatureViewController.m */,
 			);
@@ -347,9 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1404425C1AE381D100DDB154 /* UIColor+HYPColors.m in Sources */,
 				140442561AE381D100DDB154 /* HYPContractViewController.m in Sources */,
-				1404425E1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */,
 				140442581AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */,
 				140442281AE380F200DDB154 /* AppDelegate.swift in Sources */,
 				142B5EEA1AE6906200681B50 /* ViewController.swift in Sources */,
@@ -362,10 +348,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				146D72B31AB782920058798C /* Tests.m in Sources */,
-				1404425B1AE381D100DDB154 /* UIColor+HYPColors.m in Sources */,
 				140442571AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */,
 				140442551AE381D100DDB154 /* HYPContractViewController.m in Sources */,
-				1404425D1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */,
 				140442591AE381D100DDB154 /* HYPSignatureViewController.m in Sources */,
 				142B5EED1AE697BC00681B50 /* UIButton+HYPSignatureViewController.m in Sources */,
 			);

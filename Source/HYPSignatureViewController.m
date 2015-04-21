@@ -1,6 +1,6 @@
 #import "HYPSignatureViewController.h"
 
-#import "UIColor+HYPColors.h"
+#import "UIColor+Hex.h"
 
 static const CGFloat HYPSignatureSubjectY = 70.0f;
 
@@ -45,7 +45,7 @@ static const CGFloat HYPSignatureSubjectY = 70.0f;
     _signHereLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, HYPSignatureWidth, 350.0f)];
     _signHereLabel.text = NSLocalizedString(@"TapHereToSign", nil);
     _signHereLabel.font = [UIFont fontWithName:@"DIN-Light" size:33.0];
-    _signHereLabel.textColor = [UIColor HYPDarkBlue];
+    _signHereLabel.textColor = [UIColor colorFromHex:@"455C73"];
     _signHereLabel.textAlignment = NSTextAlignmentCenter;
 
     return _signHereLabel;
@@ -93,7 +93,7 @@ static const CGFloat HYPSignatureSubjectY = 70.0f;
     _signatureSubject.text = [NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Signature", nil), self.name];
     _signatureSubject.font = [UIFont fontWithName:@"DIN-Regular" size:23.0];
     _signatureSubject.textAlignment = NSTextAlignmentCenter;
-    _signatureSubject.textColor = [UIColor HYPDarkBlue];
+    _signatureSubject.textColor = [UIColor colorFromHex:@"455C73"];
 
     return _signatureSubject;
 }
@@ -103,7 +103,7 @@ static const CGFloat HYPSignatureSubjectY = 70.0f;
 
     CGFloat margin = 100.0f;
     _lineSeparatorView = [[UIView alloc] initWithFrame:CGRectMake(margin, HYPSignatureHeight - HYPSignatureSubjectY - 15.0f, HYPSignatureWidth - (2.0f * margin), 2.0f)];
-    _lineSeparatorView.backgroundColor = [UIColor HYPDarkBlue];
+    _lineSeparatorView.backgroundColor = [UIColor colorFromHex:@"455C73"];
 
     return _lineSeparatorView;
 }
@@ -121,7 +121,7 @@ static const CGFloat HYPSignatureSubjectY = 70.0f;
     [self.view addSubview:self.signHereLabel];
 
     self.view.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-    self.view.layer.borderColor = [UIColor HYPCallToAction].CGColor;
+    self.view.layer.borderColor = [UIColor colorFromHex:@"3DAFEB"].CGColor;
     self.view.layer.cornerRadius = 10.0f;
     self.view.layer.borderWidth = 2.0f;
     self.view.layer.masksToBounds = YES;
@@ -147,7 +147,7 @@ static const CGFloat HYPSignatureSubjectY = 70.0f;
     self.cancelButton.enabled = enabled;
     self.doneButton.enabled = enabled;
 
-    UIColor *color = (enabled) ? [UIColor HYPCallToAction] : [UIColor HYPLightGray];
+    UIColor *color = (enabled) ? [UIColor colorFromHex:@"3DAFEB"] : [UIColor colorFromHex:@"F5F5F8"];
     [self.cancelButton setTitleColor:color forState:UIControlStateNormal];
     [self.doneButton setTitleColor:color forState:UIControlStateNormal];
 
