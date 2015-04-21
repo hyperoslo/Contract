@@ -4,7 +4,7 @@
 #import "HYPContractViewController.h"
 #import "HYPSignaturesViewController.h"
 #import "HYPSignatureViewController.h"
-#import "HYPButton.h"
+#import "UIButton+HYPSignatureViewController.h"
 #import "HYPSignatureView.h"
 #import "UIColor+Hex.h"
 

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		140442281AE380F200DDB154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140442271AE380F200DDB154 /* AppDelegate.swift */; };
 		1404422F1AE380F200DDB154 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1404422E1AE380F200DDB154 /* Images.xcassets */; };
-		140442531AE381D100DDB154 /* HYPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442481AE381D100DDB154 /* HYPButton.m */; };
-		140442541AE381D100DDB154 /* HYPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442481AE381D100DDB154 /* HYPButton.m */; };
 		140442551AE381D100DDB154 /* HYPContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424A1AE381D100DDB154 /* HYPContractViewController.m */; };
 		140442561AE381D100DDB154 /* HYPContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424A1AE381D100DDB154 /* HYPContractViewController.m */; };
 		140442571AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1404424C1AE381D100DDB154 /* HYPSignaturesViewController.m */; };
@@ -22,6 +20,7 @@
 		1404425D1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442521AE381D100DDB154 /* UIFont+HYPStyles.m */; };
 		1404425E1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 140442521AE381D100DDB154 /* UIFont+HYPStyles.m */; };
 		142B5EEA1AE6906200681B50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B5EE91AE6906200681B50 /* ViewController.swift */; };
+		142B5EED1AE697BC00681B50 /* UIButton+HYPSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142B5EEC1AE697BC00681B50 /* UIButton+HYPSignatureViewController.m */; };
 		146D72B31AB782920058798C /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146D72B21AB782920058798C /* Tests.m */; };
 		3F38CC73E16288496BC3BA04 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D144AD9458212465B413D6 /* libPods.a */; };
 		90F1E95A651BED5951167FFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D144AD9458212465B413D6 /* libPods.a */; };
@@ -32,8 +31,6 @@
 		140442261AE380F200DDB154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		140442271AE380F200DDB154 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
 		1404422E1AE380F200DDB154 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		140442471AE381D100DDB154 /* HYPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPButton.h; sourceTree = "<group>"; };
-		140442481AE381D100DDB154 /* HYPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPButton.m; sourceTree = "<group>"; };
 		140442491AE381D100DDB154 /* HYPContractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPContractViewController.h; sourceTree = "<group>"; };
 		1404424A1AE381D100DDB154 /* HYPContractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPContractViewController.m; sourceTree = "<group>"; };
 		1404424B1AE381D100DDB154 /* HYPSignaturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPSignaturesViewController.h; sourceTree = "<group>"; };
@@ -46,6 +43,8 @@
 		140442521AE381D100DDB154 /* UIFont+HYPStyles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+HYPStyles.m"; sourceTree = "<group>"; };
 		1404425F1AE381EE00DDB154 /* Pod-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pod-Bridging-Header.h"; sourceTree = "<group>"; };
 		142B5EE91AE6906200681B50 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		142B5EEB1AE697BC00681B50 /* UIButton+HYPSignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HYPSignatureViewController.h"; sourceTree = "<group>"; };
+		142B5EEC1AE697BC00681B50 /* UIButton+HYPSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HYPSignatureViewController.m"; sourceTree = "<group>"; };
 		146D72AC1AB782920058798C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146D72B11AB782920058798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		146D72B21AB782920058798C /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
@@ -110,8 +109,6 @@
 		140442461AE381D100DDB154 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				140442471AE381D100DDB154 /* HYPButton.h */,
-				140442481AE381D100DDB154 /* HYPButton.m */,
 				140442491AE381D100DDB154 /* HYPContractViewController.h */,
 				1404424A1AE381D100DDB154 /* HYPContractViewController.m */,
 				1404424B1AE381D100DDB154 /* HYPSignaturesViewController.h */,
@@ -122,6 +119,8 @@
 				140442501AE381D100DDB154 /* UIColor+HYPColors.m */,
 				140442511AE381D100DDB154 /* UIFont+HYPStyles.h */,
 				140442521AE381D100DDB154 /* UIFont+HYPStyles.m */,
+				142B5EEB1AE697BC00681B50 /* UIButton+HYPSignatureViewController.h */,
+				142B5EEC1AE697BC00681B50 /* UIButton+HYPSignatureViewController.m */,
 			);
 			name = Source;
 			path = ../Source;
@@ -351,7 +350,6 @@
 				1404425C1AE381D100DDB154 /* UIColor+HYPColors.m in Sources */,
 				140442561AE381D100DDB154 /* HYPContractViewController.m in Sources */,
 				1404425E1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */,
-				140442541AE381D100DDB154 /* HYPButton.m in Sources */,
 				140442581AE381D100DDB154 /* HYPSignaturesViewController.m in Sources */,
 				140442281AE380F200DDB154 /* AppDelegate.swift in Sources */,
 				142B5EEA1AE6906200681B50 /* ViewController.swift in Sources */,
@@ -369,7 +367,7 @@
 				140442551AE381D100DDB154 /* HYPContractViewController.m in Sources */,
 				1404425D1AE381D100DDB154 /* UIFont+HYPStyles.m in Sources */,
 				140442591AE381D100DDB154 /* HYPSignatureViewController.m in Sources */,
-				140442531AE381D100DDB154 /* HYPButton.m in Sources */,
+				142B5EED1AE697BC00681B50 /* UIButton+HYPSignatureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

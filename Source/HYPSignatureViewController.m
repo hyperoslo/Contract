@@ -51,10 +51,10 @@ static const CGFloat HYPSignatureSubjectY = 70.0f;
     return _signHereLabel;
 }
 
-- (HYPButton *)doneButton {
+- (UIButton *)doneButton {
     if (_doneButton) return _doneButton;
 
-    _doneButton = [HYPButton whiteButtonWithFrame:CGRectMake(HYPSignatureWidth - HYPButtonWidth, 0.0f, HYPButtonWidth, HYPButtonHeight)
+    _doneButton = [UIButton whiteButtonWithFrame:CGRectMake(HYPSignatureWidth - HYPButtonWidth, 0.0f, HYPButtonWidth, HYPButtonHeight)
                                              title:NSLocalizedString(@"Ferdig", nil)
                                             target:self
                                             action:@selector(doneButtonPressed)];
@@ -68,11 +68,11 @@ static const CGFloat HYPSignatureSubjectY = 70.0f;
     return _doneButton;
 }
 
-- (HYPButton *)cancelButton {
+- (UIButton *)cancelButton {
     if (_cancelButton) return _cancelButton;
 
     NSString *title = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Clear", nil), NSLocalizedString(@"SignatureField", nil)];
-    _cancelButton = [HYPButton whiteButtonWithFrame:CGRectMake(0.0f, 0.0f, HYPNullifyButtonSignatureWidth, HYPButtonHeight)
+    _cancelButton = [UIButton whiteButtonWithFrame:CGRectMake(0.0f, 0.0f, HYPNullifyButtonSignatureWidth, HYPButtonHeight)
                                                title:title
                                               target:self
                                               action:@selector(cancelButtonPressed)];
