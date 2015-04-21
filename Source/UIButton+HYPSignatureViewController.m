@@ -9,7 +9,7 @@
                               title:(NSString *)title
                              target:(id)target
                              action:(SEL)action {
-    HYPButton *button = [[HYPButton alloc] initWithFrame:frame];
+    UIButton *button = [[UIButton alloc] initWithFrame:frame];
     button.layer.cornerRadius = 0.0f;
     button.backgroundColor = [UIColor clearColor];
 
